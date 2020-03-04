@@ -16,9 +16,7 @@
         .resume {
             display: grid;
             /*width  : 50mm;*/
-            /* hardcoded purely for codepen example */
             /*height: 70.5mm;*/
-            /* hardcoded purely for codepen example */
             /*grid-template-columns: 2fr 1fr;*/
             grid-template-columns: 1fr;
             grid-template-rows   : 0.25fr -0.25fr 1fr 1fr 1fr 1fr;
@@ -73,11 +71,9 @@
             grid-area: photo;
         }
 
-
         .about {
             grid-area: about;
         }
-
 
         .work {
             grid-area: work;
@@ -86,7 +82,6 @@
         .skills {
             grid-area       : skills;
             background-color: grey;
-
         }
 
         .education {
@@ -101,84 +96,84 @@
             grid-area: references;
         }
 
-.wrapper {
-    padding        : 0;
-    display        : flex;
-    flex-direction : row;
-    justify-content: space-evenly;
-}
+        .wrapper {
+            padding        : 0;
+            display        : flex;
+            flex-direction : row;
+            justify-content: space-evenly;
+        }
 
-.work .job-title {
-    font-weight: 600
-}
+        .work .job-title {
+            font-weight: 600
+        }
 
-.work .company-container {
-    display: flex; 
-    align-items: left;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 60%;
-    /*padding: 5px;*/
-}
+        .work .company-container {
+            display: flex;
+            align-items: left;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 60%;
+            /*padding: 5px;*/
+        }
 
-.company-experience-container {
-    display: flex; 
-    align-items: left;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-    word-break: break-word;
+        .company-experience-container {
+            display: flex;
+            align-items: left;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            word-break: break-word;
 
-    margin-right: 5px;
-    width: 100%;
-}
+            margin-right: 5px;
+            width: 100%;
+        }
 
-.name-title-container {
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
+        .name-title-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
 
-.company-header-avatar{
-    width: 120px;
-    height: 120px;
-    -webkit-border-radius: 120;
-    -webkit-background-clip: padding-box;
-    -moz-border-radius: 120;
-    -moz-background-clip: padding;
-    border-radius: 120px;
-    background-clip: padding-box;
-    margin: 7px 0 0 5px;
-    float: left;
-    background-size: cover;
-    background-position: center center;
-}
+        .company-header-avatar{
+            width: 120px;
+            height: 120px;
+            -webkit-border-radius: 120;
+            -webkit-background-clip: padding-box;
+            -moz-border-radius: 120;
+            -moz-background-clip: padding;
+            border-radius: 120px;
+            background-clip: padding-box;
+            margin: 7px 0 0 5px;
+            float: left;
+            background-size: cover;
+            background-position: center center;
+        }
 
-@media (min-width: 1200px) {
-  .resume {
-    grid-template-areas:
-      "name photo"
-      "work about"
-      "work education"
-      "community skills";
-  }
-}
+        @media (min-width: 1200px) {
+          .resume {
+            grid-template-areas:
+              "name photo"
+              "work about"
+              "work education"
+              "community skills";
+          }
+        }
 
-@media (min-width: 900px) {
-  .resume {
-      grid-template-columns: 2fr 1fr;
-      grid-template-areas:
-        "name photo"
-        "about about"
-        "work work"
-        "education education"
-        "skills skills"
-        "community community"
-        "references references"
-  }
-}
+        @media (min-width: 900px) {
+          .resume {
+              grid-template-columns: 2fr 1fr;
+              grid-template-areas:
+                "name photo"
+                "about about"
+                "work work"
+                "education education"
+                "skills skills"
+                "community community"
+                "references references"
+          }
+        }
 	</style>
 </head>
 <body>
